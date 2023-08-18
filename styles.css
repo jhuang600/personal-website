@@ -1,0 +1,25 @@
+
+#name {
+    font-family: monspace;
+    font-size: 50px;
+    text-emphasis: underline;
+    color: #e75480;
+    opacity: 0.5;
+}
+
+.about {
+    font-family: "segoe UI";
+}
+
+h1 {
+    color: #4169E1;
+}
+
+li:hover {
+    color: blue;
+}
+
+h4.about {
+    color: black;
+}
+
