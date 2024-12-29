@@ -14,41 +14,57 @@
     </head>
     <body>
         <nav class="navbar navbar-expand-md navbar-light bg-light border">
-            <ul class="navbar-nav mr-auto mt-2">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">
-                        About
-                    </a>
-                </li>
+            <div class="container d-flex justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            About
+                        </a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="resume.pdf" target="_blank">
-                        Resume
-                    </a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="https://github.com/jhuang600" target="_blank">
-                        Github
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://www.linkedin.com/in/jessicahuang02" target="_blank">
-                        LinkedIn
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contactme.html">
-                        Contact Me
-                    </a>
-                </li>
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.pdf" target="_blank">
+                            Resume
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/jhuang600" target="_blank">
+                            Github
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/jessicahuang02" target="_blank">
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactme.html">
+                            Contact Me
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+
+        <script>
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function() {
+                    document.querySelectorAll('.nav-link').forEach(item => item.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        </script>
+
 
         <main class="container p-5">
             <!-- p is for padding in bootstrap -->
             <h1>Hello, I'm Jessica! </h1>
-            <img src="sample_image.jpeg" alt="Golden Gate image" class="mx-auto d-block" width="600" height="auto" style="margin-bottom: 40px;">
+            <img src="profile_pic.jpeg" alt="Golden Gate image" class="mx-auto d-block" width="600" height="auto" style="margin-bottom: 40px;">
             <h5 class="about"></h5>
             <p>I was born and raised in Belize and now call San Francisco home. Currently, I'm a graduate student in Computer and Information Technology at the University of Pennsylvania, aspiring to become a software engineer.</p>
             <p>During my studies, I've developed skills in Java, Python, and web development, and completed projects that tackle real-world problems. I also gained industry experience as a Software Engineering Intern at A Round Entertainment, where I contributed to the development of an iOS dating app.</p>
