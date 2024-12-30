@@ -33,8 +33,13 @@ h3 {
 }
 
 @media (max-width: 576px) {
-    h1, h2, h3 {
+    h1, h3 {
         font-size: 20px; 
+        line-height: 1.4; 
+    }
+
+    h2 {
+        font-size: 16px; 
         line-height: 1.4; 
     }
 
